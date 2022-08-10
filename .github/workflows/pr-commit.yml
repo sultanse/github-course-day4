@@ -1,0 +1,12 @@
+name: PR commit
+
+on:
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "hello"
